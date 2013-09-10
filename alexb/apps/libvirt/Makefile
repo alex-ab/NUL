@@ -45,7 +45,7 @@ else
 endif
 
 .configure.stamp: .version.stamp
-	cd libvirt-$(VERSION) && autoreconf -v && ./autogen.sh		\
+	cd libvirt-$(VERSION) && autoreconf -i -v && ./autogen.sh	\
 	--without-uml --without-openvz --without-vmware --without-lxc	\
 	--without-esx --with-nova --without-macvtap --without-python	\
 	--without-remote --without-libvirtd --without-qemu		\
